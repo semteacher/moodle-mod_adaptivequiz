@@ -163,9 +163,16 @@ class mod_adaptivequiz_renderer extends plugin_renderer_base {
 
         // Print the question.
         $options = new question_display_options();
-        $options->hide_all_feedback();
-        $options->flags = question_display_options::HIDDEN;
-        $options->marks = question_display_options::MAX_ONLY;
+        //mathetest - display all for immediate feedback. TODO: NOT WORKING!
+        $options->correctness = question_display_options::VISIBLE;
+        $options->flags = question_display_options::VISIBLE;
+        $options->marks = question_display_options::MARK_AND_MAX;
+        $options->rightanswer = question_display_options::VISIBLE;
+        //mathetest 2017
+        //original
+        //$options->hide_all_feedback();
+        //$options->flags = question_display_options::HIDDEN;
+        //$options->marks = question_display_options::MAX_ONLY;
 
         $output .= $quba->render_question($slot, $options);
 
