@@ -280,6 +280,7 @@
         <column>maximumquestions</column>
         <column>standarderror</column>
         <column>startinglevel</column>
+        <column>preferredbehaviour</column>
         <row>
             <value>330</value>
             <value>1</value>
@@ -292,6 +293,7 @@
             <value>20</value>
             <value>1.0</value>
             <value>50</value>
+            <value>immediatefeedback</value>
         </row>
  <!--       <row>
             <value>221</value>
@@ -305,6 +307,7 @@
             <value>20</value>
             <value>1.0</value>
             <value>50</value>
+            <value>deferredfeedback</value>
         </row>
         <row>
             <value>222</value>
@@ -318,6 +321,7 @@
             <value>20</value>
             <value>1.0</value>
             <value>50</value>
+            <value>immediatefeedback</value>
         </row>
         <row>
             <value>223</value>
@@ -331,6 +335,7 @@
             <value>20</value>
             <value>1.0</value>
             <value>50</value>
+            <value>deferredfeedback</value>
         </row> -->
     </table>
     <table name="adaptivequiz_attempt">
